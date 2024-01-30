@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.bootcamp.demospringbootemployee.model.Employee;
 
 
-public interface DatabaseController {
+public interface DatabaseOperation {
 
   @GetMapping(value = "/employee/{index}")
   Employee getEmployeeDatabase(@PathVariable(name = "index") int index);

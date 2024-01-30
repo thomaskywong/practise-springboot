@@ -9,7 +9,7 @@ public class EmployeeDatabase {
 
   public static Employee getDatabase(int index) {
     if (index < 0 || index >= dbSize)
-      throw new IllegalArgumentException("Invalid index value.");
+      throw new IllegalArgumentException("Invalid index value. index shall be between 0 and 9");
 
     return EmployeeDatabase.employees[index];
   }
